@@ -9,8 +9,8 @@ export default function Hero() {
   const heading = "HI, I AM ARUN";
   const heading2 = "AUTOMATION TESTING ENGINEER";
 
-  const content = `Dynamic automation engineer with a strong interest in transitioning to full stack software development. Possesses a solid foundation in automation testing, scripting languages, and testing frameworks, and is actively enhancing skills in frontend and backend development, including Java Spring Boot and React.js. Experienced in version control and collaborative development using GitHub. Demonstrates a strong ability to learn quickly, adapt to new technologies, and solve complex problems. Seeking opportunities to leverage automation expertise and full stack development skills to build impactful and scalable software solutions.`;
-
+  // const content = `Dynamic automation engineer with a strong interest in transitioning to full stack software development. Possesses a solid foundation in automation testing, scripting languages, and testing frameworks, and is actively enhancing skills in frontend and backend development, including Java Spring Boot and React.js. Experienced in version control and collaborative development using GitHub. Demonstrates a strong ability to learn quickly, adapt to new technologies, and solve complex problems. Seeking opportunities to leverage automation expertise and full stack development skills to build impactful and scalable software solutions.`;
+const content = `Automation testing engineer with industry experience in test automation, scripting languages, and testing frameworks. Took a planned career break from Nov 2024 to explore opportunities in government sectors while continuing to maintain and strengthen technical proficiency in automation testing. Skilled in tools and technologies such as Java, Selenium, REST Assured, Appium, and modern testing frameworks. Committed to continuous learning, problem solving, and staying updated with evolving software testing practices. Seeking opportunities to contribute strong automation expertise to build reliable and high-quality software solutions.`;
   useEffect(() => {
     if (!textRef.current) return;
 
@@ -79,10 +79,10 @@ export default function Hero() {
     G-MAIL
   </a>
 </p>
-<p style={{ fontSize: "0.95rem", color: "#666", marginTop: "12px" }}>
-   <strong>⚠️ Note:</strong> From November 2024, I undertook a planned career
-  break to explore opportunities in the government sector, while consistently
-  maintaining and strengthening my technical skills.
+<p className="caution-text">
+  <strong>⚠️ Note:</strong> From November 2024, I undertook a planned career
+  break to explore opportunities in the government sector while maintaining my
+  technical skills.
 </p>
 
 
@@ -96,22 +96,14 @@ export default function Hero() {
       {/* Text Content */}
       <div
         ref={textRef}
+        className="hero-text"
         style={{
           flex: 1,
           maxWidth: "700px",
         }}
       >
         {/* Name Heading */}
-<h1
-  style={{
-    fontFamily: "Poppins, sans-serif",
-    fontSize: "3.4rem",
-    fontWeight: 800,
-    letterSpacing: "-1px",
-    lineHeight: "1.1",
-    marginBottom: "12px",
-  }}
->
+<h1>
   {/* "HI, I AM" in gray */}
   {"HI, I AM ".split("").map((char, index) => (
     <span key={index} style={{ color: "#cbcbcb" }}>
@@ -129,16 +121,7 @@ export default function Hero() {
 
 
         {/* Role Heading */}
-        <h2
-          style={{
-            fontFamily: "Orbitron, sans-serif",
-            fontSize: "2rem",
-            fontWeight: 600,
-            color: "#cbcbcb",
-            marginBottom: "28px",
-            letterSpacing: "0.5px",
-          }}
-        >
+        <h2>
           {heading2.split("").map((char, index) => (
             <span key={index}>{char}</span>
           ))}
