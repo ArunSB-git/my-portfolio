@@ -47,7 +47,7 @@ export default function Footer() {
 
       {/* Resume */}
       <a
-        href="/assets/SDE_CV.pdf"
+        href="/assets/QA_CV.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="footer-box"
